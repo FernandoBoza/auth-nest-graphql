@@ -4,7 +4,7 @@ import { CreateUserInput, UpdateUserInput } from './user-inputs.dto';
 import { UserService } from './user.service';
 import { UseGuards } from '@nestjs/common';
 import { GqlAuthGuard } from './user.guard';
-import { CurrentUser } from './user.docrator';
+import { CurrentUser } from './user.decorator';
 import { Types } from 'mongoose';
 
 @Resolver(() => User)
